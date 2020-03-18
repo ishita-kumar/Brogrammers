@@ -8,7 +8,7 @@ node{
     }
     stage('Build Docker Image'){
       		
-         sh "docker build -t arjunbh/post-analysis:1.0.0 ."
+         sh "docker build -t arjunbh/rabbitmq ."
     }
    
     stage('Push Docker Image'){
@@ -17,7 +17,7 @@ node{
        
        
 }
-  sh "docker push arjunbh/post-analysis:1.0.0"
+  sh "docker push arjunbh/rabbitmq"
      
     }
    
